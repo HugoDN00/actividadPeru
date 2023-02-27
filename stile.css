@@ -8,6 +8,9 @@
 h2{
     text-align :  center;
 }
+body{
+    padding-bottom: 2em;
+}
 /*ESTILO SECCION 1*/
 /*FIN ESTILO SECCION 1*/
 /*ESTILO SECCION 2*/
@@ -90,6 +93,93 @@ h2{
 /*FIN ESTILO SECCION 5*/
 /*ESTILO SECCION 6*/
 /*FIN ESTILO SECCION 6*/
+/*ESTILO FOOTER*/
+/*(001) edicion general de footer */
+footer {
+    background-color: rgb(85, 85, 85);
+    height: auto;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 40px;
+    color: white;
+    margin-top: auto;
+    
+}
+/*(001) estilo tanto del logo como las partes de la pagina */
+.barraFooter {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 20px 20px 0;
+
+}
+/*(011)*/
+.barraFooter h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+/*(011)*/
+.barraFooter1 ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+/*(011)*/
+.barraFooter1 li {
+    margin: 0 50px;
+}
+/*(011)*/
+.barraFooter2 ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+/*(011)*/
+.barraFooter2 li {
+    margin: 0 50px;
+}
+/*(010) estilo de los iconos */
+.redesSociales {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+/*(011)*/
+.redesSociales li {
+    margin: 0 10px;
+}
+/*(011) efecto al pasar el mouse*/
+.redesSociales a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+/*(022)*/
+.redesSociales a:hover i {
+    color: aqua;
+}
+/*(010) stule de la parte de copyright */
+.footerFinal {
+    background: black;
+    padding: 20px 0;
+    text-align: center;
+}
+/*(011)*/
+.footerFinal p {
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+/*FIN ESTILO FOOTER*/
 /*MEDIAQUERYS PARA TABLET*/
 @media screen and (min-width:600px) and (max-width:991px) {
     /*SECCION 2*/
