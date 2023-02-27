@@ -1,8 +1,16 @@
+/*ESTILO MOBILE*/
+/*GENERAL*/
 /*(000)*/
 *{
     margin: 0%;
     padding: 0%;
 }
+h2{
+    text-align :  center;
+}
+/*ESTILO SECCION 1*/
+/*FIN ESTILO SECCION 1*/
+/*ESTILO SECCION 2*/
 /*(010) espacio*/
 .containerSection2{
     margin: 34px;
@@ -15,7 +23,7 @@
 /*(010) altura y espacios entre la etiqueta cuadro*/
 .containerSection2Cuadro{
     height: auto;
-    margin: 5px
+    margin: 5px;
 }
 /*(010)*/
 .containerSection2Cuadros{
@@ -72,4 +80,64 @@
 /*(021)*/
 .containerSection2Info a:hover{
     color: white;
+}
+/*FIN ESTILO SECCION 2*/
+/*ESTILO SECCION 3*/
+/*FIN ESTILO SECCION 3*/
+/*ESTILO SECCION 4*/
+/*FIN ESTILO SECCION 4*/
+/*ESTILO SECCION 5*/
+/*FIN ESTILO SECCION 5*/
+/*ESTILO SECCION 6*/
+/*FIN ESTILO SECCION 6*/
+/*MEDIAQUERYS PARA TABLET*/
+@media screen and (min-width:600px) and (max-width:991px) {
+    /*SECCION 2*/
+    /*(010) flex del cuadro1*/
+    .containerSection2Parte1{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    /*(010) flex del cuadro2*/
+    .containerSection2Parte2{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .containerSection2Cuadro{
+        height: 48%;
+        margin: 5px;
+    }
+    /*FIN SECCION 2*/
+}
+/*MEDIAQUERYS PARA ORDENADOR*/
+@media screen and (min-width:992px)  {
+    /*SECCION 2*/
+    /*(010)*/
+    .containerSection2Cuadros{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    /*(010) flex del cuadro1*/
+    .containerSection2Parte1{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+    /*(010) flex del cuadro2*/
+    .containerSection2Parte2{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .containerSection2Cuadro{
+        height: 23%;
+    }
+    /*FIN SECCION 2*/
 }
