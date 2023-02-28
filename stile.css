@@ -12,55 +12,53 @@ body{
     padding-bottom: 2em;
 }
 /*ESTILO SECCION 1*/
-/*FIN ESTILO SECCION 1*/
-/*ESTILO SECCION 2*/
 /*(010) espacio*/
-.containerSection2{
+.containerSection1{
     margin: 34px;
 }
 /*(011) estilo de h2*/
-.containerSection2 h2{
+.containerSection1 h2{
     margin: 5px 5px 15px;
     font-size: 45px;
 }
 /*(010) altura y espacios entre la etiqueta cuadro*/
-.containerSection2Cuadro{
+.containerSection1Cuadro{
     height: auto;
     margin: 5px;
 }
 /*(010)*/
-.containerSection2Cuadros{
+.containerSection1Cuadros{
     display: flex;
     flex-direction: column;
 }
 /*(010) flex del cuadro1*/
-.containerSection2Parte1{
+.containerSection1Parte1{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
 }
 /*(010) flex del cuadro2*/
-.containerSection2Parte2{
+.containerSection1Parte2{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
 }
 /*(010) Creacion de los margin para la espacio entre cada etiqueta*/
-.containerSection2Info{
+.containerSection1Info{
     margin: 10px;
 }
 /*(011) tamaño del font*/
-.containerSection2Info h3{
+.containerSection1Info h3{
     font-size: 22px;
 }
 /*(011)*/
-.containerSection2Info p{
+.containerSection1Info p{
     font-size: 18px;
 }
 /*(011) creacion de los espacios entre las etiquetas */
-.containerSection2Info h3,p,button{
+.containerSection1Info h3,p,button{
     margin: 5px 0px 15px;
 }
 /*(010) estilo del boton */
@@ -84,6 +82,8 @@ body{
 .containerSection2Info a:hover{
     color: white;
 }
+/*FIN ESTILO SECCION 1*/
+/*ESTILO SECCION 2*/
 /*FIN ESTILO SECCION 2*/
 /*ESTILO SECCION 3*/
 /*FIN ESTILO SECCION 3*/
@@ -183,51 +183,52 @@ footer {
 /*MEDIAQUERYS PARA TABLET*/
 @media screen and (min-width:600px) and (max-width:991px) {
     /*SECCION 2*/
+    /*(001)*/
+    footer{
+        margin-top: 100px;
+    }
     /*(010) flex del cuadro1*/
-    .containerSection2Parte1{
+    .containerSection1Parte1{
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
     }
     /*(010) flex del cuadro2*/
-    .containerSection2Parte2{
+    .containerSection1Parte2{
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-    }
-    .containerSection2Cuadro{
-        height: 48%;
-        margin: 5px;
     }
     /*FIN SECCION 2*/
 }
 /*MEDIAQUERYS PARA ORDENADOR*/
 @media screen and (min-width:992px)  {
-    /*SECCION 2*/
+    /*SECCION 1*/
+    /*(001)*/
+    footer{
+        margin-top: 75px;
+    }
     /*(010)*/
-    .containerSection2Cuadros{
+    .containerSection1Cuadros{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
     }
     /*(010) flex del cuadro1*/
-    .containerSection2Parte1{
+    .containerSection1Parte1{
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-around;
     }
     /*(010) flex del cuadro2*/
-    .containerSection2Parte2{
+    .containerSection1Parte2{
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-    }
-    .containerSection2Cuadro{
-        height: 23%;
     }
     /*FIN SECCION 2*/
 }
