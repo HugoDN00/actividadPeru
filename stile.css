@@ -124,25 +124,27 @@ footer {
 .barraFooter1 ul {
     list-style: none;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 
 }
 /*(011)*/
 .barraFooter1 li {
-    margin: 0 50px;
+   text-align: center;
 }
 /*(011)*/
 .barraFooter2 ul {
     list-style: none;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 
 }
 /*(011)*/
 .barraFooter2 li {
-    margin: 0 50px;
+   text-align: center;
 }
 /*(010) estilo de los iconos */
 .redesSociales {
@@ -179,10 +181,20 @@ footer {
     word-spacing: 2px;
     text-transform: capitalize;
 }
+/*(010)*/
+.barraFooter{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+/*(100)*/
+#peruino{
+    margin: 15px;
+}
 /*FIN ESTILO FOOTER*/
 /*MEDIAQUERYS PARA TABLET*/
 @media screen and (min-width:600px) and (max-width:991px) {
-    /*SECCION 2*/
+    /*SECCION 1*/
     /*(001)*/
     footer{
         margin-top: 100px;
@@ -201,7 +213,41 @@ footer {
         align-items: center;
         justify-content: space-between;
     }
-    /*FIN SECCION 2*/
+    /*FIN SECCION 1*/
+    /*FOOTER*/
+    /*(011)*/
+    .barraFooter1 ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+    }
+    /*011*/
+    .barraFooter1 li {
+        margin: 0 20px;
+    }
+    /*(011)*/
+    .barraFooter2 ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+    }
+    /*011*/
+    .barraFooter2 li {
+        margin: 0 20px;
+    }
+    /*(010)*/
+    .barraFooter{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    /*FIN FOOTER*/
 }
 /*MEDIAQUERYS PARA ORDENADOR*/
 @media screen and (min-width:992px)  {
@@ -230,5 +276,39 @@ footer {
         align-items: center;
         justify-content: space-between;
     }
-    /*FIN SECCION 2*/
+    /*FIN SECCION 1*/
+    /*FOOTER*/
+    /*(011)*/
+    .barraFooter1 ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+    }
+    /*(011)*/
+    .barraFooter1 li {
+        margin: 0 50px;
+    }
+    /*(011)*/
+    .barraFooter2 ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+    }
+    /*(011)*/
+    .barraFooter2 li {
+        margin: 0 50px;
+    }
+      /*(010)*/
+      .barraFooter{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    /*FIN FOOTER*/
 }
