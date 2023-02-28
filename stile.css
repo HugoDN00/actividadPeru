@@ -92,6 +92,58 @@ body{
 /*ESTILO SECCION 5*/
 /*FIN ESTILO SECCION 5*/
 /*ESTILO SECCION 6*/
+/*(010)*/
+.suscripcion{
+    background-color: rgb(173, 173, 173);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: auto;
+}
+/*(010)*/
+.suscripcionTexto {
+    text-align: center;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*(010)*/
+.suscripcionBoton{
+    display: flex;
+    flex-direction: column;
+}
+/*(011) botones */
+.suscripcionBoton button {
+    width: 135px;
+    height: 45px;
+    border: rgb(0, 153, 255) 2px solid;
+    border-radius: 10px;
+    margin: 5px;
+}
+/*(012)*/
+.suscripcionBoton button a {
+    margin: 20px;
+    text-decoration: none;
+}
+/*(010) estilo boton1*/
+.boton1 {
+    background-color: white;
+}
+/*(011)*/
+.boton1 a {
+    color: rgb(0, 153, 255);
+}
+/*fin estilo boton1*/
+/*(010) estilo boton2*/
+.boton2 {
+    background-color: rgb(0, 153, 255);
+}
+/*(011)*/
+.boton2 a {
+    color: white;
+}
+/*Fin estilo boton2*/
+/*fin botones*/
 /*FIN ESTILO SECCION 6*/
 /*ESTILO FOOTER*/
 /*(001) edicion general de footer */
@@ -214,6 +266,28 @@ footer {
         justify-content: space-between;
     }
     /*FIN SECCION 1*/
+    /*ESTILO SECCION 6*/
+    /*(010)*/
+    .suscripcion{
+        background-color: rgb(173, 173, 173);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        width: auto;
+    }
+    /*(010)*/
+    .suscripcionTexto {
+        text-align: center;
+        font-size: 24px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    /*(010)*/
+    .suscripcionBoton{
+        display: flex;
+        flex-direction: row;
+    }
+    /*FIN SECCION 6*/
     /*FOOTER*/
     /*(011)*/
     .barraFooter1 ul {
@@ -277,6 +351,28 @@ footer {
         justify-content: space-between;
     }
     /*FIN SECCION 1*/
+    /*ESTILO SECCION 6*/
+    /*(010)*/
+    .suscripcion{
+        background-color: rgb(173, 173, 173);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        width: auto;
+    }
+    /*(010)*/
+    .suscripcionTexto {
+        text-align: center;
+        font-size: 24px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    /*(010)*/
+    .suscripcionBoton{
+        display: flex;
+        flex-direction: row;
+    }
+    /*FIN SECCION 6*/
     /*FOOTER*/
     /*(011)*/
     .barraFooter1 ul {
