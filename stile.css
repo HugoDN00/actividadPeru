@@ -197,7 +197,7 @@ footer {
     /*SECCION 1*/
     /*(001)*/
     footer{
-        margin-top: 100px;
+        margin-top: auto;
     }
     /*(010) flex del cuadro1*/
     .containerSection1Parte1{
@@ -254,7 +254,7 @@ footer {
     /*SECCION 1*/
     /*(001)*/
     footer{
-        margin-top: 75px;
+        margin-top: auto;
     }
     /*(010)*/
     .containerSection1Cuadros{
