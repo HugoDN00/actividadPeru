@@ -112,6 +112,29 @@ body{
 /*ESTILO SECCION 3*/
 /*FIN ESTILO SECCION 3*/
 /*ESTILO SECCION 4*/
+.containerSection4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(192, 181, 181);
+    padding: 20px;
+}
+/*(010)*/
+.textoSection4{
+    text-align: center;
+}
+/*010*/
+.imagenSection4 {
+    height: auto;
+    margin: 5px;
+}
+/*011*/
+.imagenSection4 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 /*FIN ESTILO SECCION 4*/
 /*ESTILO SECCION 5*/
 /*FIN ESTILO SECCION 5*/
@@ -316,6 +339,31 @@ footer {
         object-fit: cover;
     }
     /*FIN ESTILO SECCION 2*/
+    /*ESTILO SECCION 4*/
+    .containerSection4{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(192, 181, 181);
+        padding: 20px;
+    }
+    /*(010)*/
+    .textoSection4{
+        text-align: center;
+    }
+    /*010*/
+    .imagenSection4 {
+        height: auto;
+        margin: 5px;
+    }
+    /*011*/
+    .imagenSection4 img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    /*FIN ESTILO SECCION 4*/
     /*ESTILO SECCION 6*/
     /*(010)*/
     .suscripcion{
@@ -426,6 +474,30 @@ footer {
         object-fit: cover;
     }
     /*FIN ESTILO SECCION 2*/
+    /*ESTILO SECCION 4*/
+    .containerSection4{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(192, 181, 181);
+        padding: 20px;
+    }
+    /*(010)*/
+    .textoSection4{
+        text-align: center;
+    }
+    /*010*/
+    .imagenSection4 {
+        height: auto;
+        margin: 5px;
+    }
+    /*011*/
+    .imagenSection4 img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
     /*ESTILO SECCION 6*/
     /*(010)*/
     .suscripcion{
