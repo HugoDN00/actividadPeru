@@ -615,6 +615,26 @@ footer {
         object-fit: cover;
     }
     /*FIN ESTILO SECCION 4*/
+    /*ESTILO SECCION 5*/
+    .containerSection5{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        text-align: center;
+    }
+    .seccion5Imagenes{
+        margin: 15px;
+    }
+    .seccion5Info{
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        width: 100%;
+        overflow: auto;
+    }
+    /*FIN ESTILO SECCION 5*/
     /*ESTILO SECCION 6*/
     /*(010)*/
     .suscripcion{
@@ -800,6 +820,25 @@ footer {
         height: 100%;
         object-fit: cover;
     }
+    /*ESTILO SECCION 5*/
+    .containerSection5{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        text-align: center;
+    }
+    .seccion5Imagenes{
+        margin: 15px;
+    }
+    .seccion5Info{
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        width: 100%;
+    }
+    /*FIN ESTILO SECCION 5*/
     /*ESTILO SECCION 6*/
     /*(010)*/
     .suscripcion{
