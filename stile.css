@@ -13,6 +13,108 @@ h2{
 body{
     padding-bottom: 2em;
 }
+/*ESTILO BARRA NAVEGACION*/
+/*(010)*/
+.headerGeneral{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(90, 90, 90);
+    padding: 0 0.4rem;
+}
+/*(010) logo*/
+.logoMain {
+    color: rgb(255, 255, 255);
+    font-size: 32px;
+    text-decoration: none;
+}
+/*(010) contenedor de la barra en modo telefono*/
+.navGeneral {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    margin-left: 100%;
+    transition: all .2s linear;
+    z-index: 100;
+}
+/*(020)*/
+.navGeneral.show {
+    margin-left: 0;
+}
+/*(010)*/
+.navLinks {
+    background-color: rgb(90, 90, 90);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+/*(010)*/
+.linkItem {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    position: center;
+}
+/*(011)*/
+.linkItem::after {
+    position: absolute;
+    content: "";
+    background-color: rgb(255, 255, 255);
+    bottom: -5px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    transition: 0.3s ease all;
+}
+/*(021)*/
+.linkItem:hover::after {
+    width: 100%;
+}
+/*(010) Boton*/
+.botonMenu {
+    z-index: 200;
+    width: 40px;
+    height: 40px;
+    border: none;
+    display: flex;
+    background: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+/*(011)*/
+.botonMenu span {
+    width: 37px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #ffffff;
+    border-radius: 3px;
+    transform-origin: 4px 0px;
+    transition: all .2s linear;
+}
+/*(021)*/
+.botonMenu.close span {
+    opacity: 1;
+    transform: rotate(45deg) translate(0px, 0px);
+    background: #ffffff;
+}
+/*(031)*/
+.botonMenu.close span:nth-child(2) {
+    transform: rotate(-45deg) translate(-8px, 5px);
+}
+/*(031)*/
+.botonMenu.close span:nth-child(3) {
+    display: none;
+}
+/*FIN BARRA NAVEGACION*/
 /*ESTILO BANNER*/
 /*(010)*/
 .banner {
@@ -368,6 +470,39 @@ footer {
 /*FIN ESTILO FOOTER*/
 /*MEDIAQUERYS PARA TABLET*/
 @media screen and (min-width:600px) and (max-width:991px) {
+    /*ESTILO BARRA NAVEGACION*/
+    /*(010)*/
+    .botonMenu {
+        display: none;
+    }
+    /*(010)*/
+    .logoMain {
+        flex-basis: 30%;
+    }
+    .navGeneral {
+        position: static;
+        margin-left: 0;
+        flex-basis: 70%;
+        height: 100%;
+    }
+    /*(010)*/
+    .navLinks {
+        width: 100%;
+        height: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: flex-end;
+        background: rgb(90, 90, 90);
+    }
+    /*(010)*/
+    .linkItem {
+        display: inline-block;
+        margin-top: 15px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    /*FIN BARRA NAVEGACION
     /*ESTILO BANNER*/
     /*(010)*/
     .banner {
@@ -511,6 +646,39 @@ footer {
 }
 /*MEDIAQUERYS PARA ORDENADOR*/
 @media screen and (min-width:992px)  {
+    /*ESTILO BARRA NAVEGACION*/
+    /*(010)*/
+    .botonMenu {
+        display: none;
+    }
+    /*(010)*/
+    .logoMain {
+        flex-basis: 30%;
+    }
+    .navGeneral {
+        position: static;
+        margin-left: 0;
+        flex-basis: 70%;
+        height: 100%;
+    }
+    /*(010)*/
+    .navLinks {
+        width: 100%;
+        height: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: flex-end;
+        background: rgb(90, 90, 90);
+    }
+    /*(010)*/
+    .linkItem {
+        display: inline-block;
+        margin-top: 15px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    /*FIN BARRA NAVEGACION
     /*ESTILO BANNER*/
     /*(010)*/
     .banner {
