@@ -477,6 +477,10 @@ footer {
 @media screen and (min-width:600px) and (max-width:991px) {
     /*ESTILO BARRA NAVEGACION*/
     /*(010)*/
+    .headerGeneral{
+        width: 100%;
+    }
+    /*(010)*/
     .botonMenu {
         display: none;
     }
@@ -652,6 +656,10 @@ footer {
 /*MEDIAQUERYS PARA ORDENADOR*/
 @media screen and (min-width:992px)  {
     /*ESTILO BARRA NAVEGACION*/
+    /*(010)*/
+    .headerGeneral{
+        width: 100%;
+    }
     /*(010)*/
     .botonMenu {
         display: none;
