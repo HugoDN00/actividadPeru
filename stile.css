@@ -668,6 +668,7 @@ footer {
     .logoMain {
         flex-basis: 30%;
     }
+    /*(010)*/
     .navGeneral {
         position: static;
         margin-left: 0;
