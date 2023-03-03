@@ -577,11 +577,13 @@ footer {
     /*(010)*/
     .textoSection2{
         text-align: center;
+        margin: 15px;
     }
     /*010*/
     .imagenSection2 {
         height: auto;
-        margin: 5px;
+        margin: 15px;
+
     }
     /*011*/
     .imagenSection2 img{
@@ -602,11 +604,12 @@ footer {
     /*(010)*/
     .textoSection4{
         text-align: center;
+        margin: 15px;
     }
     /*010*/
     .imagenSection4 {
         height: auto;
-        margin: 5px;
+        margin: 15px;
     }
     /*011*/
     .imagenSection4 img{
@@ -808,11 +811,12 @@ footer {
     /*(010)*/
     .textoSection4{
         text-align: center;
+        margin: 15px;
     }
     /*010*/
     .imagenSection4 {
         height: auto;
-        margin: 5px;
+        margin: 15px;
     }
     /*011*/
     .imagenSection4 img{
