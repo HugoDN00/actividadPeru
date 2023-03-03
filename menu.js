@@ -1,5 +1,5 @@
-const toggleButton = document.getElementById('button-menu')
-const navWrapper = document.getElementById('nav')
+const toggleButton = document.getElementById('botonMenu')
+const navWrapper = document.getElementById('navG')
 
 toggleButton.addEventListener('click', () => {
     toggleButton.classList.toggle('close')
@@ -7,7 +7,7 @@ toggleButton.addEventListener('click', () => {
 })
 
 navWrapper.addEventListener('click', e => {
-    if (e.target.id === 'nav') {
+    if (e.target.id === 'navG') {
         navWrapper.classList.remove('show')
         toggleButton.classList.remove('close')
     }
