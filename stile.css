@@ -349,7 +349,7 @@ button {
 
 /*011*/
 .imagenSection2 img {
-    width: 100%;
+    width: 400px;
     height: 100%;
     object-fit: cover;
 }
@@ -380,7 +380,7 @@ button {
 
 /*011*/
 .imagenSection4 img {
-    width: 100%;
+    width: 400px;
     height: 100%;
     object-fit: cover;
 }
@@ -398,6 +398,12 @@ button {
 
 .seccion5Imagenes {
     margin: 15px;
+}
+
+.seccion5Imagenes img {
+    width: 350px;
+    height: 250px;
+
 }
 
 .seccion5Info {
@@ -713,7 +719,7 @@ footer {
 
     /*011*/
     .imagenSection2 img {
-        width: 100%;
+        width: 400px;
         height: 100%;
         object-fit: cover;
     }
@@ -743,7 +749,7 @@ footer {
 
     /*011*/
     .imagenSection4 img {
-        width: 100%;
+        width: 400px;
         height: 100%;
         object-fit: cover;
     }
@@ -974,7 +980,7 @@ footer {
 
     /*011*/
     .imagenSection2 img {
-        width: 100%;
+        width: 400px;
         height: 100%;
         object-fit: cover;
     }
@@ -1004,7 +1010,7 @@ footer {
 
     /*011*/
     .imagenSection4 img {
-        width: 100%;
+        width: 400px;
         height: 100%;
         object-fit: cover;
     }
