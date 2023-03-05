@@ -1,38 +1,57 @@
 /*ESTILO MOBILE*/
 /*GENERAL*/
 /*(000)*/
-*{
+* {
     margin: 0%;
     padding: 0%;
 }
+
 /*(001)*/
-h2{
-    text-align :  center;
+/* Modificado por Joseph para arreglar posicion del texto tanto de la seccion 2 y 4 */
+.textoSection2 h2 {
+    text-align: center;
     font-size: large;
 }
-/*(001)*/
-body{
-    padding-bottom: 2em;
+
+.textoSection4 h2 {
+    text-align: center;
+    font-size: large;
 }
+
+.textoSection2 p {
+    text-align: center;
+    font-size: large;
+}
+
+.textoSection4 p {
+    text-align: center;
+    font-size: large;
+}
+
+/*(001)*/
+
+
 /*ESTILO BARRA NAVEGACION*/
 /*(010)*/
-.headerGeneral{
+.headerGeneral {
     height: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(90, 90, 90);
+    background-color: rgb(223 59 59);
     padding: 0 0.2rem;
     z-index: 1000;
-    width: 98%;
+    width: 100%;
     position: fixed;
 }
+
 /*(010) logo*/
 .logoMain {
     color: rgb(255, 255, 255);
     font-size: 32px;
     text-decoration: none;
 }
+
 /*(010) contenedor de la barra en modo telefono*/
 .navGeneral {
     position: fixed;
@@ -44,18 +63,21 @@ body{
     transition: all .2s linear;
     z-index: 100;
 }
+
 /*(020)*/
 .navGeneral.show {
     margin-left: 0;
 }
+
 /*(010)*/
 .navLinks {
-    background-color: rgb(90, 90, 90);
+    background-color: rgb(223 59 59);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
 }
+
 /*(010)*/
 .linkItem {
     margin-top: 2rem;
@@ -65,6 +87,7 @@ body{
     font-weight: bold;
     position: center;
 }
+
 /*(011)*/
 .linkItem::after {
     position: absolute;
@@ -76,10 +99,12 @@ body{
     height: 3px;
     transition: 0.3s ease all;
 }
+
 /*(021)*/
 .linkItem:hover::after {
     width: 100%;
 }
+
 /*(010) Boton*/
 .botonMenu {
     z-index: 200;
@@ -92,8 +117,10 @@ body{
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    margin-right: 11px;
 
 }
+
 /*(011)*/
 .botonMenu span {
     width: 37px;
@@ -105,26 +132,30 @@ body{
     transform-origin: 4px 0px;
     transition: all .2s linear;
 }
+
 /*(021)*/
 .botonMenu.close span {
     opacity: 1;
     transform: rotate(45deg) translate(0px, 0px);
     background: #ffffff;
 }
+
 /*(031)*/
 .botonMenu.close span:nth-child(2) {
     transform: rotate(-45deg) translate(-8px, 5px);
 }
+
 /*(031)*/
 .botonMenu.close span:nth-child(3) {
     display: none;
 }
+
 /*FIN BARRA NAVEGACION*/
 /*ESTILO BANNER*/
 /*(010)*/
 .banner {
     width: 100%;
-    height: 300px;
+    height: 377px;
     animation: banner 30s infinite linear alternate;
     background-size: 100% 100%;
     position: relative;
@@ -133,25 +164,31 @@ body{
     align-items: center;
     padding-top: 50px;
 }
+
 /* Se usara un @keypara la creacion de las transiciones de imagenes */
 @keyframes banner {
+
     0%,
     20% {
         background-image: url(./imgs/pueblo.jpg);
     }
+
     25%,
     45% {
         background-image: url(./imgs/desiertodecolores.jpg);
     }
+
     50%,
     70% {
         background-image: url(./imgs/machupichu.jpg);
     }
+
     75%,
     100% {
         background-image: url(./imgs/pueblerino.jpg);
     }
 }
+
 /* Fin del @keyframe */
 /*(010) crea una capa oscura transparente enfrente de la imagen */
 .capa {
@@ -162,6 +199,7 @@ body{
     left: 0;
     background: rgba(0, 0, 0, 0.6);
 }
+
 /* fin de capa */
 /*(010) Style de texto */
 .informacionBanner {
@@ -170,6 +208,7 @@ body{
     max-width: 550px;
     text-align: center;
 }
+
 /* Fin de Style de texto */
 /*(011)*/
 .informacionBanner h1 {
@@ -178,149 +217,180 @@ body{
     margin-bottom: 20px;
     letter-spacing: 1px;
 }
+
 /*(011)*/
 .informacionBanner p {
     color: #c7c7c7;
     line-height: 1.7;
     margin-bottom: 30px;
 }
+
 /*(011)*/
 .informacionBanner a {
     color: #fff;
     text-decoration: none;
-    background: #3088e0;
+    background: rgb(223 59 59);
     padding: 16px 37px;
     display: inline-block;
     border-radius: 10px;
 }
+
 /*FIN ESTILO BANNER*/
 /*ESTILO SECCION 1*/
 /*(010) espacio*/
-.containerSection1{
-    margin: 34px;
+.containerSection1 {
+    margin: 79px 30px;
 }
+
 /*(011) estilo de h2*/
-.containerSection1 h2{
+.containerSection1 h2 {
     margin: 5px 5px 15px;
     font-size: 45px;
+    text-align: center;
 }
+
 /*(010) altura y espacios entre la etiqueta cuadro*/
-.containerSection1Cuadro{
+.containerSection1Cuadro {
     height: auto;
-    margin: 5px;
+    margin: 9px;
+    width: 50%;
+    border: rgb(223 59 59) solid 2px;
+    border-radius: 14px;
+    padding: 5px;
 }
+
 /*(010)*/
-.containerSection1Cuadros{
+.containerSection1Cuadros {
     display: flex;
     flex-direction: column;
 }
+
 /*(010) flex del cuadro1*/
-.containerSection1Parte1{
+.containerSection1Parte1 {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
 }
+
 /*(010) flex del cuadro2*/
-.containerSection1Parte2{
+.containerSection1Parte2 {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
 }
+
 /*(010) Creacion de los margin para la espacio entre cada etiqueta*/
-.containerSection1Info{
+.containerSection1Info {
     margin: 10px;
 }
+
 /*(011) tamaño del font*/
-.containerSection1Info h3{
+.containerSection1Info h3 {
     font-size: 22px;
 }
+
 /*(011)*/
-.containerSection1Info p{
+.containerSection1Info p {
     font-size: 18px;
 }
+
 /*(011) creacion de los espacios entre las etiquetas */
-.containerSection1Info h3,p,button{
+.containerSection1Info h3,
+p,
+button {
     margin: 5px 0px 15px;
 }
+
 /*(010) estilo del boton */
 .button {
     background-color: white;
-    border: rgb(0, 119, 255) 2px solid;
+    border: rgb(223 59 59) 2px solid;
     border-radius: 10px;
     margin: 8px;
     padding: 6px 19px;
     text-decoration: none;
     font-size: 16px;
-    color: rgb(0, 140, 255);
+    color: rgb(223 59 59);
 
 }
+
 /*(020) creacion del hover para los botones */
 .button:hover {
-    background-color: rgb(0, 119, 255);
+    background-color: rgb(223 59 59);
     color: white;
 }
+
 /*(021)*/
-.containerSection2Info a:hover{
+.containerSection2Info a:hover {
     color: white;
 }
+
 /*FIN ESTILO SECCION 1*/
 /*ESTILO SECCION 2*/
 /*(010) espacio y flex*/
-.containerSection2{
+.containerSection2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(192, 181, 181);
+    background-color: rgb(245 174 174);
     padding: 20px;
 }
+
 /*(010)*/
-.textoSection2{
+.textoSection2 {
     text-align: center;
 }
+
 /*010*/
 .imagenSection2 {
     height: auto;
     margin: 5px;
 }
+
 /*011*/
-.imagenSection2 img{
-    width: 100%;
+.imagenSection2 img {
+    width: 326px;
     height: 100%;
     object-fit: cover;
 }
+
 /*FIN ESTILO SECCION 2*/
 /*ESTILO SECCION 3*/
 /*FIN ESTILO SECCION 3*/
 /*ESTILO SECCION 4*/
-.containerSection4{
+.containerSection4 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(192, 181, 181);
+    background-color: rgb(245 174 174);
     padding: 20px;
 }
+
 /*(010)*/
-.textoSection4{
+.textoSection4 {
     text-align: center;
 }
+
 /*010*/
 .imagenSection4 {
     height: auto;
     margin: 5px;
 }
+
 /*011*/
-.imagenSection4 img{
-    width: 100%;
+.imagenSection4 img {
+    width: 326px;
     height: 100%;
     object-fit: cover;
 }
+
 /*FIN ESTILO SECCION 4*/
 /*ESTILO SECCION 5*/
-.containerSection5{
+.containerSection5 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -328,83 +398,100 @@ body{
     padding: 10px;
     text-align: center;
 }
-.seccion5Imagenes{
+
+.seccion5Imagenes {
     margin: 15px;
 }
-.seccion5Info{
+
+.seccion5Imagenes img {
+    width: 350px;
+    height: 250px;
+
+}
+
+.seccion5Info {
     display: flex;
     flex-direction: row;
     height: auto;
-	width: 100%;
-	overflow: auto;
+    width: 100%;
+    overflow: auto;
 }
+
 /*FIN ESTILO SECCION 5*/
 /*ESTILO SECCION 6*/
 /*(010)*/
-.suscripcion{
-    background-color: rgb(173, 173, 173);
+.suscripcion {
+    background-color: rgb(245 174 174);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     width: auto;
+    padding: 20px;
 }
+
 /*(010)*/
 .suscripcionTexto {
     text-align: center;
     font-size: 24px;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 /*(010)*/
-.suscripcionBoton{
+.suscripcionBoton {
     display: flex;
     flex-direction: column;
 }
+
 /*(011) botones */
 .suscripcionBoton button {
     width: 135px;
     height: 45px;
-    border: rgb(0, 153, 255) 2px solid;
+    border: rgb(223 59 59) 2px solid;
     border-radius: 10px;
     margin: 5px;
 }
+
 /*(012)*/
 .suscripcionBoton button a {
     margin: 20px;
     text-decoration: none;
 }
+
 /*(010) estilo boton1*/
 .boton1 {
     background-color: white;
 }
-/*(011)*/
-.boton1 a {
-    color: rgb(0, 153, 255);
+
+.suscripcionBoton button:hover {
+    background-color: rgb(223 59 59);
 }
-/*fin estilo boton1*/
-/*(010) estilo boton2*/
-.boton2 {
-    background-color: rgb(0, 153, 255);
-}
-/*(011)*/
-.boton2 a {
+
+.suscripcionBoton button:hover a {
     color: white;
 }
-/*Fin estilo boton2*/
+
+/*(011)*/
+.boton1 a {
+    color: rgb(223 59 59);
+}
+
+/*fin estilo boton1*/
 /*fin botones*/
 /*FIN ESTILO SECCION 6*/
 /*ESTILO FOOTER*/
 /*(001) edicion general de footer */
 footer {
-    background-color: rgb(85, 85, 85);
+    background-color: rgb(223 59 59);
     height: auto;
     width: 100%;
     font-family: Arial, Helvetica, sans-serif;
     padding-top: 40px;
     color: white;
     margin-top: auto;
-    
+
 }
+
 /*(001) estilo tanto del logo como las partes de la pagina */
 .barraFooter {
     display: flex;
@@ -413,6 +500,7 @@ footer {
     margin: 0 20px 20px 0;
 
 }
+
 /*(011)*/
 .barraFooter h3 {
     font-size: 1.8rem;
@@ -420,6 +508,7 @@ footer {
     text-transform: capitalize;
     line-height: 3rem;
 }
+
 /*(011)*/
 .barraFooter1 ul {
     list-style: none;
@@ -429,10 +518,12 @@ footer {
     justify-content: center;
 
 }
+
 /*(011)*/
 .barraFooter1 li {
-   text-align: center;
+    text-align: center;
 }
+
 /*(011)*/
 .barraFooter2 ul {
     list-style: none;
@@ -442,10 +533,12 @@ footer {
     justify-content: center;
 
 }
+
 /*(011)*/
 .barraFooter2 li {
-   text-align: center;
+    text-align: center;
 }
+
 /*(010) estilo de los iconos */
 .redesSociales {
     list-style: none;
@@ -454,10 +547,12 @@ footer {
     justify-content: center;
     margin: 1rem 0 3rem 0;
 }
+
 /*(011)*/
 .redesSociales li {
     margin: 0 10px;
 }
+
 /*(011) efecto al pasar el mouse*/
 .redesSociales a {
     text-decoration: none;
@@ -465,71 +560,89 @@ footer {
     font-size: 1.1rem;
     transition: color .4s ease;
 }
+
 /*(022)*/
 .redesSociales a:hover i {
     color: aqua;
 }
+
 /*(010) stule de la parte de copyright */
 .footerFinal {
     background: black;
     padding: 20px 0;
     text-align: center;
 }
+
 /*(011)*/
 .footerFinal p {
     font-size: 14px;
     word-spacing: 2px;
     text-transform: capitalize;
 }
+
 /*(010)*/
-.barraFooter{
+.barraFooter {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
+
 /*(100)*/
-#peruino{
+#peruino {
     margin: 15px;
 }
+
 /*FIN ESTILO FOOTER*/
 /*MEDIAQUERYS PARA TABLET*/
 @media screen and (min-width:600px) and (max-width:991px) {
+
     /*ESTILO BARRA NAVEGACION*/
     /*(010)*/
-    .headerGeneral{
-        width: 100%;
-    }
-    /*(010)*/
     .botonMenu {
+        z-index: 200;
+        width: 40px;
+        height: 40px;
+        border: none;
+        display: flex;
+        background: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        margin-right: 11px;
+
+    }
+
+    /*(011)*/
+    .botonMenu span {
+        width: 37px;
+        height: 4px;
+        margin-bottom: 5px;
+        position: relative;
+        background: #ffffff;
+        border-radius: 3px;
+        transform-origin: 4px 0px;
+        transition: all .2s linear;
+    }
+
+    /*(021)*/
+    .botonMenu.close span {
+        opacity: 1;
+        transform: rotate(45deg) translate(0px, 0px);
+        background: #ffffff;
+    }
+
+    /*(031)*/
+    .botonMenu.close span:nth-child(2) {
+        transform: rotate(-45deg) translate(-8px, 5px);
+    }
+
+    /*(031)*/
+    .botonMenu.close span:nth-child(3) {
         display: none;
     }
-    /*(010)*/
-    .logoMain {
-        flex-basis: 30%;
-    }
-    .navGeneral {
-        position: static;
-        margin-left: 0;
-        flex-basis: 70%;
-        height: 100%;
-    }
-    /*(010)*/
-    .navLinks {
-        width: 100%;
-        height: 100%;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: flex-end;
-        background: rgb(90, 90, 90);
-    }
-    /*(010)*/
-    .linkItem {
-        display: inline-block;
-        margin-top: 15px;
-        margin-right: 10px;
-        margin-left: 10px;
-    }
+
+
     /*FIN BARRA NAVEGACION
     /*ESTILO BANNER*/
     /*(010)*/
@@ -543,83 +656,115 @@ footer {
         justify-content: center;
         align-items: center;
     }
+
     /*FIN BANNER*/
     /*SECCION 1*/
     /*(001)*/
-    footer{
+    footer {
         margin-top: auto;
     }
+
     /*(010) flex del cuadro1*/
-    .containerSection1Parte1{
+    .containerSection1Parte1 {
         display: flex;
         flex-direction: row;
-        align-items: center;
+        align-items: baseline;
         justify-content: space-between;
     }
+
     /*(010) flex del cuadro2*/
-    .containerSection1Parte2{
+    .containerSection1Parte2 {
         display: flex;
         flex-direction: row;
-        align-items: center;
+        align-items: baseline;
         justify-content: space-between;
     }
+
     /*FIN SECCION 1*/
     /*ESTILO SECCION 2*/
+    .textoSection2 h2 {
+        text-align: end;
+        font-size: large;
+    }
+
+    .textoSection4 h2 {
+        text-align: start;
+        font-size: large;
+    }
+
+    .textoSection2 p {
+        text-align: end;
+        font-size: large;
+    }
+
+    .textoSection4 p {
+        text-align: start;
+        font-size: large;
+    }
+
     /*(010) espacio y flex*/
-    .containerSection2{
+    .containerSection2 {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        background-color: rgb(192, 181, 181);
+        background-color: rgb(245 174 174);
         padding: 20px;
     }
+
     /*(010)*/
-    .textoSection2{
+    .textoSection2 {
         text-align: center;
         margin: 15px;
     }
+
     /*010*/
     .imagenSection2 {
         height: auto;
         margin: 15px;
 
     }
+
     /*011*/
-    .imagenSection2 img{
-        width: 100%;
+    .imagenSection2 img {
+        width: 400px;
         height: 100%;
         object-fit: cover;
     }
+
     /*FIN ESTILO SECCION 2*/
     /*ESTILO SECCION 4*/
-    .containerSection4{
+    .containerSection4 {
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        background-color: rgb(192, 181, 181);
+        background-color: rgb(245 174 174);
         padding: 20px;
     }
+
     /*(010)*/
-    .textoSection4{
+    .textoSection4 {
         text-align: center;
         margin: 15px;
     }
+
     /*010*/
     .imagenSection4 {
         height: auto;
         margin: 15px;
     }
+
     /*011*/
-    .imagenSection4 img{
-        width: 100%;
+    .imagenSection4 img {
+        width: 400px;
         height: 100%;
         object-fit: cover;
     }
+
     /*FIN ESTILO SECCION 4*/
     /*ESTILO SECCION 5*/
-    .containerSection5{
+    .containerSection5 {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -627,38 +772,45 @@ footer {
         padding: 10px;
         text-align: center;
     }
-    .seccion5Imagenes{
+
+    .seccion5Imagenes {
         margin: 15px;
     }
-    .seccion5Info{
+
+    .seccion5Info {
         display: flex;
         flex-direction: row;
         height: auto;
         width: 100%;
         overflow: auto;
     }
+
     /*FIN ESTILO SECCION 5*/
     /*ESTILO SECCION 6*/
     /*(010)*/
-    .suscripcion{
-        background-color: rgb(173, 173, 173);
+    .suscripcion {
+        background-color: rgb(245 174 174);
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
         width: auto;
+        padding: 20px;
     }
+
     /*(010)*/
     .suscripcionTexto {
         text-align: center;
         font-size: 24px;
         font-family: Arial, Helvetica, sans-serif;
     }
+
     /*(010)*/
-    .suscripcionBoton{
+    .suscripcionBoton {
         display: flex;
         flex-direction: row;
     }
+
     /*FIN SECCION 6*/
     /*FOOTER*/
     /*(011)*/
@@ -670,10 +822,12 @@ footer {
         justify-content: center;
 
     }
+
     /*011*/
     .barraFooter1 li {
         margin: 0 20px;
     }
+
     /*(011)*/
     .barraFooter2 ul {
         list-style: none;
@@ -683,33 +837,41 @@ footer {
         justify-content: center;
 
     }
+
     /*011*/
     .barraFooter2 li {
         margin: 0 20px;
     }
+
     /*(010)*/
-    .barraFooter{
+    .barraFooter {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
     }
+
     /*FIN FOOTER*/
 }
+
 /*MEDIAQUERYS PARA ORDENADOR*/
-@media screen and (min-width:992px)  {
+@media screen and (min-width:992px) {
+
     /*ESTILO BARRA NAVEGACION*/
     /*(010)*/
-    .headerGeneral{
+    .headerGeneral {
         width: 100%;
     }
+
     /*(010)*/
     .botonMenu {
         display: none;
     }
+
     /*(010)*/
     .logoMain {
         flex-basis: 30%;
     }
+
     /*(010)*/
     .navGeneral {
         position: static;
@@ -717,6 +879,7 @@ footer {
         flex-basis: 70%;
         height: 100%;
     }
+
     /*(010)*/
     .navLinks {
         width: 100%;
@@ -725,8 +888,9 @@ footer {
         flex-wrap: wrap;
         align-items: center;
         justify-content: flex-end;
-        background: rgb(90, 90, 90);
+        background: rgb(223 59 59);
     }
+
     /*(010)*/
     .linkItem {
         display: inline-block;
@@ -734,6 +898,7 @@ footer {
         margin-right: 10px;
         margin-left: 10px;
     }
+
     /*FIN BARRA NAVEGACION
     /*ESTILO BANNER*/
     /*(010)*/
@@ -747,123 +912,164 @@ footer {
         justify-content: center;
         align-items: center;
     }
+
     /*FIN BANNER*/
     /*SECCION 1*/
     /*(001)*/
-    footer{
+    footer {
         margin-top: auto;
     }
+
     /*(010)*/
-    .containerSection1Cuadros{
+    .containerSection1Cuadros {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
     }
+
     /*(010) flex del cuadro1*/
-    .containerSection1Parte1{
+    .containerSection1Parte1 {
         display: flex;
         flex-direction: row;
-        align-items: center;
+        align-items: baseline;
         justify-content: space-around;
     }
+
     /*(010) flex del cuadro2*/
-    .containerSection1Parte2{
+    .containerSection1Parte2 {
         display: flex;
         flex-direction: row;
-        align-items: center;
+        align-items: baseline;
         justify-content: space-between;
     }
+
     /*FIN SECCION 1*/
     /*ESTILO SECCION 2*/
     /*(010) espacio y flex*/
-    .containerSection2{
+    .containerSection2 {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
-        background-color: rgb(192, 181, 181);
+        background-color: rgb(245 174 174);
+        padding: 40px;
     }
+
+    .textoSection2 h2 {
+        text-align: end;
+        font-size: large;
+    }
+
+    .textoSection4 h2 {
+        text-align: start;
+        font-size: large;
+    }
+
+    .textoSection2 p {
+        text-align: end;
+        font-size: large;
+    }
+
+    .textoSection4 p {
+        text-align: start;
+        font-size: large;
+    }
+
     /*(010)*/
-    .textoSection2{
+    .textoSection2 {
         text-align: center;
     }
+
     /*010*/
     .imagenSection2 {
         height: auto;
         margin: 5px;
     }
+
     /*011*/
-    .imagenSection2 img{
-        width: 100%;
+    .imagenSection2 img {
+        width: 400px;
         height: 100%;
         object-fit: cover;
     }
+
     /*FIN ESTILO SECCION 2*/
     /*ESTILO SECCION 4*/
-    .containerSection4{
+    .containerSection4 {
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
-        background-color: rgb(192, 181, 181);
-        padding: 20px;
+        background-color: rgb(245 174 174);
+        padding: 40px;
     }
+
     /*(010)*/
-    .textoSection4{
+    .textoSection4 {
         text-align: center;
         margin: 15px;
     }
+
     /*010*/
     .imagenSection4 {
         height: auto;
         margin: 15px;
     }
+
     /*011*/
-    .imagenSection4 img{
-        width: 100%;
+    .imagenSection4 img {
+        width: 400px;
         height: 100%;
         object-fit: cover;
     }
+
     /*ESTILO SECCION 5*/
-    .containerSection5{
+    .containerSection5 {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 10px;
+        padding: 40px;
         text-align: center;
     }
-    .seccion5Imagenes{
+
+    .seccion5Imagenes {
         margin: 15px;
     }
-    .seccion5Info{
+
+    .seccion5Info {
         display: flex;
         flex-direction: row;
         height: auto;
         width: 100%;
     }
+
     /*FIN ESTILO SECCION 5*/
     /*ESTILO SECCION 6*/
     /*(010)*/
-    .suscripcion{
-        background-color: rgb(173, 173, 173);
+    .suscripcion {
+        background-color: rgb(245 174 174);
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-evenly;
         width: auto;
+        padding: 37px;
     }
+
     /*(010)*/
     .suscripcionTexto {
         text-align: center;
         font-size: 24px;
         font-family: Arial, Helvetica, sans-serif;
     }
+
     /*(010)*/
-    .suscripcionBoton{
+    .suscripcionBoton {
         display: flex;
         flex-direction: row;
     }
+
     /*FIN SECCION 6*/
     /*FOOTER*/
     /*(011)*/
@@ -875,10 +1081,12 @@ footer {
         justify-content: center;
 
     }
+
     /*(011)*/
     .barraFooter1 li {
         margin: 0 50px;
     }
+
     /*(011)*/
     .barraFooter2 ul {
         list-style: none;
@@ -888,15 +1096,18 @@ footer {
         justify-content: center;
 
     }
+
     /*(011)*/
     .barraFooter2 li {
         margin: 0 50px;
     }
-      /*(010)*/
-      .barraFooter{
+
+    /*(010)*/
+    .barraFooter {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
     }
+
     /*FIN FOOTER*/
 }
