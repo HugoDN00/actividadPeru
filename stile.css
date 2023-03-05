@@ -4,8 +4,8 @@
 * {
     margin: 0%;
     padding: 0%;
+    font-family: Arial, Helvetica, sans-serif;
 }
-
 /*(001)*/
 /* Modificado por Joseph para arreglar posicion del texto tanto de la seccion 2 y 4 */
 .textoSection2 h2 {
@@ -460,7 +460,6 @@ button {
 .suscripcionTexto {
     text-align: center;
     font-size: 24px;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 /*(010)*/
@@ -511,7 +510,7 @@ footer {
     background-color: rgb(223 59 59);
     height: auto;
     width: 100%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
     padding-top: 40px;
     color: white;
     margin-top: auto;
@@ -709,7 +708,7 @@ footer {
     /*FIN SECCION 1*/
     /*ESTILO SECCION 2*/
     .textoSection2 h2 {
-        text-align: end;
+        text-align: center;
         font-size: large;
     }
 
@@ -737,7 +736,9 @@ footer {
         background-color: rgb(245 174 174);
         padding: 20px;
     }
-
+    .containerSection4 h2{
+        text-align: center;
+    }
     /*(010)*/
     .textoSection2 {
         text-align: center;
@@ -856,7 +857,6 @@ footer {
     .suscripcionTexto {
         text-align: center;
         font-size: 24px;
-        font-family: Arial, Helvetica, sans-serif;
     }
 
     /*(010)*/
@@ -1010,7 +1010,7 @@ footer {
     }
 
     .textoSection2 h2 {
-        text-align: end;
+        text-align: center;
         font-size: large;
     }
 
@@ -1085,7 +1085,9 @@ footer {
         background-color: rgb(245 174 174);
         padding: 40px;
     }
-
+    .containerSection4 h2{
+        text-align: center;
+    }
     /*(010)*/
     .textoSection4 {
         text-align: center;
@@ -1143,7 +1145,6 @@ footer {
     .suscripcionTexto {
         text-align: center;
         font-size: 24px;
-        font-family: Arial, Helvetica, sans-serif;
     }
 
     /*(010)*/
